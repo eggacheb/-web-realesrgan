@@ -14,7 +14,7 @@
     @touchend="touchEnd"
   >
     <div v-if="!imgLoaded" class="title">
-      <div>SuperResolution in Your Browser</div>
+      <div>让图片变清晰，请使用谷歌浏览器并选择WebGPU加快处理速度</div>
       <img
         style="
           width: 50px;
@@ -69,11 +69,11 @@
         <div>
           <span class="description">Model</span>
           <select v-model="model">
-            <option value="anime_4x">Anime (fast)</option>
-            <option value="anime_4x_plus">Anime (plus)</option>
-            <option value="general">General (fast)</option>
+            <option value="anime_4x">Anime (fast)动漫(快速)</option>
+            <option value="anime_4x_plus">Anime (plus)动漫(质量)</option>
+            <option value="general">General (fast)一般(快速)</option>
             <!-- <option value="realx2plus">realx2plus</option> -->
-            <option value="realx4plus">General (plus)</option>
+            <option value="realx4plus">General (plus)一般(质量)</option>
           </select>
         </div>
         <div>
@@ -130,7 +130,7 @@
         ></path>
       </svg>
       <div class="demo">
-        <div>No ideas? Try one of these:</div>
+        <div>没有想法？试试这些：</div>
         <br />
         <div>
           <img class="demoimg" src="/demo/1.jpg" alt="demo" @click="testdemo" />
