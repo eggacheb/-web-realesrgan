@@ -14,7 +14,7 @@
     @touchend="touchEnd"
   >
     <div v-if="!imgLoaded" class="title">
-      <div>让图片变清晰，请使用谷歌浏览器并选择WebGPU加快处理速度</div>
+      <div>让图片变清晰，请使用谷歌浏览器并选择WebGPU加快处理速度，如果WebGPU不行，请选择WebGL</div>
       <img
         style="
           width: 50px;
