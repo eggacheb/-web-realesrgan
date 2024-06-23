@@ -763,3 +763,42 @@ export default {
   },
 };
 </script>
+
+<template>
+  <div id="app">
+    <!-- Your existing code -->
+    <df-messenger
+      project-id="teak-gift-423704-v2"
+      agent-id="0d090277-c7ed-4ff2-9a52-c0b80e02ae46"
+      language-code="en"
+      max-query-length="-1">
+      <df-messenger-chat-bubble chat-title=""></df-messenger-chat-bubble>
+    </df-messenger>
+  </div>
+</template>
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+
+<style>
+@import url('https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css');
+
+df-messenger {
+  z-index: 999;
+  position: fixed;
+  --df-messenger-font-color: #000;
+  --df-messenger-font-family: Google Sans;
+  --df-messenger-chat-background: #f3f6fc;
+  --df-messenger-message-user-background: #d3e3fd;
+  --df-messenger-message-bot-background: #fff;
+  bottom: 16px;
+  right: 16px;
+}
+</style>
+
+<script>
+export default {
+  name: 'App',
+  // Your existing script content
+}
+</script>
+
